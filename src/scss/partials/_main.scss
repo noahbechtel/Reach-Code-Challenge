@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@font-face {
+  font-family: 'ArchiveGaramondPro-BoldItalic';
+  src: url('/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.eot');
+  src: 
+  url('/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.woff') format('woff'),
+  url('/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.ttf') format('opentype'),
+  url('/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.svg') format('svg');
+  }
+  @font-face {
+    font-family: 'ArchiveGaramondPro-Bold';
+    src: url('/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.eot');
+    src: 
+    url('/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.woff') format('woff'),
+    url('/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.ttf') format('opentype'),
+    url('/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.svg') format('svg');
+    }
+  html {
+    height: 100%;
+    overflow:scroll;
+  }
+.main {
+  text-align: center;
+}
+
+.gallery{
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  
+}
+figure{
+   position: fixed;
+  opacity: 0;
+  transition: 1s opacity;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   left: 0;
+}
+
+
+figure.show{
+  opacity: 1;
+   position: static;
+  transition: 1s opacity;
+}
+.next, .prev{
+  color: #fff;
+  width:23px;
+   position: absolute;
+  top:50%;
+  z-index: 1;
+  user-select: none;
+}
+
+.next{
+  right: 37px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.prev{
+  left: 37px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+ 
+}
+
+.center{
+  color: #fff;
+   position: absolute;
+  top: 7%;
+  right: 35%;
+  line-height: 114%;
+  z-index: 2;
+  font-family: Montserrat;
+  font-size: 2em;
+
+}
+.bottom{
+  color: #fff;
+   
+  top: 30%;
+  top: 93%;
+  right: 44%;
+  line-height: 114%;
+   position: absolute;
+  z-index: 2;
+  font-family: Montserrat;
+  font-size: 2em;
+}
+.ruleSlideshow {
+   position: absolute;
+  width: 15em;
+  margin: 2%;
+  height: 2px;
+  background-color: #fff;
+  z-index: 3;
+  top: 33%;
+  right: 43%;
+}
+.slideshowText p{
+  font-family: Montserrat;
+  font-size: 19.5px;
+}
+.center h1{
+  font-family: ArchiveGaramondPro-BoldItalic;
+  font-size:3em
+}
+.instructions {
+  width: 100%;
+  position: absolute;
+  right:0;
+  top: 100%;
+
+}
+.Enter{
+    color: #6b6e68;
+   position: absolute;
+    top: 110%;
+    right: 39%;
+    line-height: 114%;
+    z-index: 2;
+    font-family: ArchiveGaramondPro-BoldItalic;
+    font-size: 5em;
+    display: flex;
+   
+}
+
+.icons{
+  position: absolute;
+  height: 10%;
+  left: 6%;
+  width: 90%;
+  z-index: 0;
+  top: 125%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.icons div img{
+  width: 15%;
+  z-index: 0;
+}
+.icons div{
+  justify-content: space-evenly
+}
+.icons  div .ruler{
+  width: 15em;
+  height: 2px;
+  background-color: #6b6e68;
+  color: #6b6e68;
+}
+.icons div .title{
+font-size: 32px
+}
+
+.icons div .bodyText{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 21px;
+  }
+.camera img {
+width: 100%;
+position: absolute;
+right:0;
+top: 175%;
+}
+
+.prize{
+  position: absolute;
+  height: 10%;
+  left: 6%;
+  width: 90%;
+  z-index: 0;
+  top: 190%;
+  
+}
+ .prize  .title{
+   font-size: 45px;
+   color: #fff;
+  font-family: ArchiveGaramondPro-BoldItalic;
+}
+.prize .bodyText{
+  width:80%;
+  font-size: 45px;
+  color: #fff;
+  font-size: 21px}
+.prize{
+  width: 45%;
+}
+.prize div {
+  width: 527px;
+  left:10%;
+}
+.people {
+  display: flex;
+  flex-direction: row;
+  top: 242%;
+  width: 100%
+}
+.judge{
+  width: 50%
+}
+.judge .background{
+  width: 50%;
+  position: absolute;
+  right:0;
+  top: 245%;
+}
+.video .background{
+  width: 50%;
+  position: absolute;
+  right:0;
+  top: 245%;
+  }
+
+.judge .title{
+  z-index: 0;
+  position: absolute;
+  right:68%;
+  top: 247%;
+  color: #6b6e68;
+  font-size:35px;
+  font-family: ArchiveGaramondPro-BoldItalic;
+}
+.profileSub{
+  z-index: 0;
+  position: absolute;
+  right:71%;
+  top: 285%;
+  font-size:25px;
+  color: #6b6e68;
+  font-family: ArchiveGaramondPro-Bold;
+ }
+
+.videoTitle{
+  z-index: 0;
+  position: absolute;
+  left:67%;
+  top: 247%;
+  font-size:35px;
+  color: #fff;
+  font-family: ArchiveGaramondPro-BoldItalic;
+ }
+ .videoSub{
+  z-index: 0;
+  position: absolute;
+  left:68%;
+  top: 285%;
+  font-size:25px;
+  color: #fff;
+  font-family: ArchiveGaramondPro-Bold;
+ }
+.button{
+  z-index: 0;
+  position: absolute;
+  height:25%;
+  left:68%;
+  top: 258%;
+  
+}
+.judge .headshot{
+  width: 15%;
+  position: absolute;
+  right:68%;
+  top: 255%;
+  }
+  .about .background{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    right:0;
+    top: 290%;
+  }
+  .about .ad{
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    left:8%;
+    top: 300%;
+  }
+  .about .body{
+    width:50%;
+    color: #fff;
+    position: absolute;
+    right:8%;
+    top: 300%;
+
+  }
+  .about .body .title{
+    font-family: ArchiveGaramondPro-BoldItalic;
+    font-size: 62px;
+    line-height:60px;
+  }
+  .about .body .ruler{
+    line-height:60px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+
+    width: 60%;
+  }
+  .about .body a{
+    font-family: ArchiveGaramondPro-Bold;
+   line-height: 200px;
+    font-size:20px;
+    color: #fff;
+    
+  }
+  .about .body .text{
+    
+    font-size: 20px;
+  }
